@@ -68,7 +68,7 @@ select {
     border: none;
     outline: none;
 }
-
+/* 
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -89,7 +89,7 @@ select {
     width: 5px;
     background-color: rgba(125, 125, 125, 0.7);
     -webkit-border-radius: 6px;
-}
+} */
 
 html, body {
     width: 100%;

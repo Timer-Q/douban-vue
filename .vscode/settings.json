@@ -2,14 +2,25 @@
 {
   "editor.tabSize": 2,
   "files.associations": {
-    "vue": "html"
+    "*.vue": "vue"
   },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
   "emmet.syntaxProfiles": {
     "vue-html": "html",
     "vue": "html"
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact"
-  ]
+  "emmet.useNewEmmet": false,
+  "[css]": {
+    "editor.quickSuggestions": true
+  },
+  "[sass]": {
+    "editor.quickSuggestions": true
+  },
+  "[less]": {
+    "editor.quickSuggestions": true
+  }
 }

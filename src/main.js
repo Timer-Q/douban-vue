@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import vHeader from './components/common/Header.vue'
-
+import store from './store'
 Vue.config.productionTip = false
 
 Vue.prototype.axios = axios
@@ -16,6 +16,7 @@ Vue.component('v-header', vHeader)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

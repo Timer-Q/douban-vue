@@ -8,10 +8,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
       component: Home,
       children: [{
-        path: '/movie',
+        path: '/',
         name: 'movie',
         component: resolve => require(['@/components/movie/Movie'], resolve)
       }, {
@@ -19,6 +18,11 @@ export default new Router({
         name: 'story',
         component: resolve => require(['@/components/stories/Stories'], resolve)
       }]
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: resolve => require(['@/components/movie/MovieDetail'], resolve)
     }
   ]
 })
